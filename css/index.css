@@ -1,0 +1,107 @@
+:root{
+    --green:#48cfad;
+    --grey:#e6e9ed;
+    font-size: 62.5%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    display: grid;
+    grid-template-rows: 5vh 10vh;
+    
+    
+    
+}
+.header__up{
+    background-color: var(--green);
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+    padding: 0 5%;
+
+
+}
+.header__img{
+
+    margin: 0 1%;
+    
+    width: 48px;
+    height: 48px;
+
+}
+.header--img1{
+    background-image: url(/assest/logos/facebook.svg);
+    background-size: cover;
+
+}
+.header--img2{
+    background-image: url(/assest/logos/twitter-alt.svg);
+    background-size: cover;
+}
+.header--img3{
+    background-image: url(/assest/logos/instagram.svg);
+    background-size: cover;
+}
+.header--img4{
+    background-image: url(/assest/logos/linkedin.svg);
+    background-size: cover;
+    margin-right: 0;
+}
+
+.header__down{
+    padding: 0 5%;
+    display: flex;
+    place-items: center ;
+    justify-content: space-between;
+}
+.header__logo{
+    background-image: url(/assest/logos/logo-negro.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.header__text{
+    font-size: 3.5rem;
+    color: black;
+}
+
+.main{
+    background-image: url(/assest/cover.webp);
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title{
+    color: white;
+    font-size: 10rem;
+    width: 50%;
+    text-align: center;
+    margin-top: 25rem;
+}
+
+.main__btn{
+    background-color: var(--green);
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 3.5rem;
+    font-size: 3.5rem;
+    height: 10%;
+    width :10%;
+    color: white;
+    text-decoration: none;
+    margin-top: 10rem;
+}

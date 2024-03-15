@@ -1,0 +1,199 @@
+:root{
+    --green:#48cfad;
+    --grey:#e6e9ed;
+    font-size: 62.5%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    display: grid;
+    grid-template-rows: 5vh 10vh;
+    
+    
+    
+}
+.header__up{
+    background-color: var(--green);
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+    padding: 0 5%;
+
+
+}
+.header__img{
+
+    margin: 0 1%;
+    
+    width: 48px;
+    height: 48px;
+
+}
+.header--img1{
+    background-image: url(/assest/logos/facebook.svg);
+    background-size: cover;
+
+}
+.header--img2{
+    background-image: url(/assest/logos/twitter-alt.svg);
+    background-size: cover;
+}
+.header--img3{
+    background-image: url(/assest/logos/instagram.svg);
+    background-size: cover;
+}
+.header--img4{
+    background-image: url(/assest/logos/linkedin.svg);
+    background-size: cover;
+    margin-right: 0;
+}
+
+.header__down{
+    padding: 0 5%;
+    display: flex;
+    place-items: center ;
+    justify-content: space-between;
+}
+.header__logo{
+    background-image: url(/assest/logos/logo-negro.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.header__text{
+    font-size: 3.5rem;
+    color: black;
+}
+
+.main-container{
+    display: grid;
+    
+    grid-template-rows: 20vh 30vh 25vh;
+}
+
+.section1{
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: center;
+    justify-items: end;
+    gap :3rem;
+}
+.section1__img{
+    background-image: url(/assest/profilepic.webp);
+    background-size: cover;
+    height: 80%;
+    
+    width: 350px;
+}
+
+.section1__title {
+    font-size: 4rem;
+    margin-bottom: 1%;
+}
+.section1__info{
+    font-size: 2.5rem;
+    width: 50%;
+}
+.section2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title title title"
+    "cont1 cont2 cont3";
+    padding: 0 5%;
+    gap: 6rem;
+
+}
+.section2__title{
+    grid-area: title;
+    font-size: 3.5rem;
+    margin:0 auto;
+    margin-top: 1rem;
+    display: block;
+}
+.section2__info{
+    font-size: 4rem;
+    padding: 0 4rem;
+}
+.section2__info span{
+    font-size: 2rem;
+}
+.section2__info--1{
+    grid-area: cont1;
+    box-shadow: 1px 0px 1cap var(--grey) ;
+}
+.section2__info--2{
+    grid-area: cont2;
+    box-shadow: 1px 0px 1cap var(--grey) ;
+}
+.section2__info--3{
+    grid-area: cont3;
+    box-shadow: 1px 0px 1cap var(--grey) ;
+}
+
+
+.section3{
+    background-color: var(--grey);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 0 5%;
+    gap: 6rem;
+    height: auto;
+}
+.section3__sides{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.section3__text{
+    font-size: 4rem;
+    padding: 0 5%;
+    width: 50%;
+}
+.section3__text span{
+    font-size: 2rem;
+}
+.right__contactIMG{
+    background-image: url(/assest/letter.png);
+    background-size: cover;
+    height: 80%;
+    
+    width: 350px;
+}
+
+.left__textMeIMG{
+    background-image: url(/assest/letter.png);
+    background-size: cover;
+    height: 80%;
+    
+    width: 350px;
+}
+
+.footer{
+    display: grid;
+  
+    grid-template-rows: 2vh 10vh;
+}
+.footer__up{
+    background-color: var(--green);
+}
+.footer__down{
+    background-color:  black;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1%;
+}
